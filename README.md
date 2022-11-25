@@ -11,7 +11,7 @@ Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.
 This is a fork of https://github.com/fspoettel/advent-of-code-rust with a minor change to tests generated for solutions. I nested tests in a submodule to `tests` using the day number to provide additional test filtering options.
 
 Run all tests for day 1:
-```rust
+```sh
 cargo test day1
 ```
 
