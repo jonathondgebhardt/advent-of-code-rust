@@ -24,18 +24,20 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-
-    #[test]
-    fn test_part_one() {
-        let input = aoc::read_file("examples", DAY);
-        assert_eq!(part_one(&input), None);
-    }
-
-    #[test]
-    fn test_part_two() {
-        let input = aoc::read_file("examples", DAY);
-        assert_eq!(part_two(&input), None);
+    mod dayDAY {
+        use super::super::*;
+        
+        #[test]
+        fn test_part_one() {
+            let input = aoc::read_file("examples", DAY);
+            assert_eq!(part_one(&input), None);
+        }
+        
+        #[test]
+        fn test_part_two() {
+            let input = aoc::read_file("examples", DAY);
+            assert_eq!(part_two(&input), None);
+        }
     }
 }
 "###;
@@ -107,5 +109,8 @@ fn main() {
     }
 
     println!("---");
-    println!("🎄 Type `cargo solve {}` to run your solution.", &day_padded);
+    println!(
+        "🎄 Type `cargo solve {}` to run your solution.",
+        &day_padded
+    );
 }
